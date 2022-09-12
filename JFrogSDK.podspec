@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
       s.homepage         = "HOMEPAGE"
       s.author            = { 'Name' => 'myemail.awasthi.com' }
       s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
-      s.source           = { :http => "https://github.com/awasthi027/frameworkDeploy/blob/main/1.0.0/JFrogSDK.zip"}
+      s.source           = { :http => "https://github.com/awasthi027/frameworkDeploy.git":tag => "#{s.version}"}
 
       s.platform         = :ios, '12.0'
       s.requires_arc     = true
