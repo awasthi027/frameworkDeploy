@@ -1,20 +1,32 @@
 
 Pod::Spec.new do |s|
-      s.name             = "JFrogSDK"
-      s.version          = "1.0.0"
-      s.summary          = "Testing xc framework deployment..."
+  s.name             = 'JFrogSDK'
+  s.version          = '1.0.0'
+  s.summary          = 'This SDK allows you to integrate SpotIM into your iOS app.'
+  s.description      = <<-DESC
 
-      s.description      = "This is the testing library push for zip. Creating sample and learning how to push zip file and consume"
+## Welcome to the Spot.IM SDK
 
-      s.homepage         = "HOMEPAGE"
-      s.author            = { 'Name' => 'myemail.awasthi.com' }
-      s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
-      s.source           = { :http => "https://github.com/awasthi027/frameworkDeploy.git":tag => "#{s.version}"}
+Spot.IM SDK provides an easy integration with [Spot.IM](http://www.spot.im) into a native iOS app.
 
-      s.platform         = :ios, '12.0'
-      s.requires_arc     = true
+Here's a sample app that shows how to use the Spot.IM SDK for iOS.
 
-      s.vendored_frameworks = 'JFrogSDK.xcframework'
-      s.framework  = "Foundation"
+## Getting started
+
+To use the SDK you will need an active Spot.IM account. If you don't have it, get one [here](http://www.spot.im).
+You will need to know your Spot ID (which looks like 'sp_xxxxxxx').
+If you don't know your Spot ID, login to the [admin dashboard](https://admin.spot.im) and have a look at the URL.
+
+DESC
+
+  s.homepage        = "http://www.spot.im"
+  s.license         = { :type => 'CUSTOM', :file => 'LICENSE' }
+  s.author          = { 'Hernan Arber' => 'hernan@spot.im' }
+  s.platform     = :ios
+  s.ios.deployment_target = '8.0'
+
+# the Pre-Compiled Framework:
+  s.source          = { :http => 'https://s3.amazonaws.com/spot.im.artifacts/ios/Latest/Spot_IM.framework.zip' }
+  s.ios.vendored_frameworks = 'Spot_IM.framework'
 
 end
