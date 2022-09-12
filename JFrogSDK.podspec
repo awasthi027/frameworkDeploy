@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "JFrogSDK"
-    s.version      = "1.0.0"
+    s.version      = "1.0.2"
     s.summary      = "A brief description of MyFramework project."
     s.description  = <<-DESC
     An extended description of MyFramework project.
